@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point of the program
@@ -9,13 +7,16 @@
  */
 int main(void)
 {
-int digit = 0;
+char letter;
 
-while (digit < 10)
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-putchar(digit + '0');
-digit++;
+if (letter != 'e' && letter != 'q')
+{
+putchar(letter);
+}
 }
 putchar('\n');
+
 return (0);
 }
