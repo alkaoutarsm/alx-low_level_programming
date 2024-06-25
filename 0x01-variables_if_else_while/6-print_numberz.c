@@ -9,14 +9,17 @@
  */
 int main(void)
 {
-char hex_digits[] = "0123456789abcdef";
-int i;
+int digit;
 
-for (i = 0; i < 24; i++)
+for (digit = 0; letter < 10; digit++)
 {
-putchar(hex_digits[i]);
+putchar('0' + digit);
+if (digit != 9)
+{
+putchar(',');
+putchar(' ');
 }
-
+}
 putchar('\n');
 return (0);
 }
