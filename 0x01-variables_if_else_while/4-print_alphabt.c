@@ -9,13 +9,12 @@
  */
 int main(void)
 {
-char letter = 'a';
+int digit;
 
-while (letter <= 'z')
-{putchar(letter);
-letter++;
+for (digit = 0; digit < 10; digit++)
+{
+putchar('0' + digit);
 }
-
 putchar('\n');
 return (0);
 }
