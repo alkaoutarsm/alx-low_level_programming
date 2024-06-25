@@ -9,13 +9,12 @@
  */
 int main(void)
 {
-char letter = 'z';
+char hex_digits[] = "0123456789abcdef";
+int i;
 
-while (letter >= 'a')
+for (i = 0; i < 24; i++)
 {
-putchar(letter);
-}
-letter--;
+putchar(hex_digits[i]);
 }
 
 putchar('\n');
