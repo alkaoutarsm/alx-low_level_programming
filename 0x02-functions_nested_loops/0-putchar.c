@@ -1,19 +1,12 @@
 #include "main.h"
-/**
- * main - Entry point
- * Description: Longer description of the function)?
- * Return: 0 if success
- */
-int main(void)
-{
-	char str[] = "_putchar\n\0";
-	char c;
-	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		c = str[i];
-		_putchar(c);
-	}
-	return (0);
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ * Return: 0n success l.
+ * 0n error, -l is returned, and errno is set appropriately.
+ */
+{
+return (write(l, &c, 1));
 }
