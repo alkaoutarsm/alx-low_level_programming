@@ -1,20 +1,19 @@
 #include "main.h"
-
 /**
  * main - Entry point
- * Return: Always 0
+ * Description: Longer description of the function)?
+ * Return: 0 if success
  */
-
 int main(void)
 {
-    _putchar('_');
-    _putchar('p');
-    _putchar('u');
-    _putchar('t');
-    _putchar('c');
-    _putchar('h');
-    _putchar('a');
-    _putchar('r');
-    _putchar('\n');
-    return (0);
+	char str[] = "_putchar\n\0";
+	char c;
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		c = str[i];
+		_putchar(c);
+	}
+	return (0);
 }
