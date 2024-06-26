@@ -1,2 +1,13 @@
 #!/bin/bash
-gcc -S -masm=intel $CFILE -o `echo $CFILE | cut -d. -f1`.s
+
+# Check if CFILE is set
+if [ -z "$CFILE" ]; then
+  echo "CFILE variable is not set."
+  exit 1
+fi
+
+# Extract the filename without the extension
+BASENAME=$(basename "$CFILE" .c)
+
+# Generate the assembly file with Intel syntax
+gcc -S -masm=intel "$CFILE" -o "${BASENAME}.s"
